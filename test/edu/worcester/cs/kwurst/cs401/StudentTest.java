@@ -6,46 +6,30 @@ import org.junit.Before;
 import org.junit.Test;
 
 public class StudentTest {
-<<<<<<< HEAD
 
 	
 	private Student student1;
+	
 	@Before
-	public void setUp()
-	{
+	public void setUp(){
 	student1 = new Student("Jane", "Smith");
-=======
-	private Student student1;
-	
-	@Before
-	public void setUp() throws Exception {
-		student1 = new Student("Jane", "Smith");
->>>>>>> 007255622f200d23d5ab600a27e40ff9d2337360
 	}
-
+	
 	@Test
 	public void testGetCurrentEarnedCr() {
-<<<<<<< HEAD
-	
 		int credits = 45;
 		student1.setCurrentEarnedCr(credits);
 		assertEquals(credits, student1.getCurrentEarnedCr());
 	}
-	
 
-@Test
-public void testReadyToGraduate1()
-{
-student1.setCurrentEarnedCr(120);
-student1.setGpa(2.0);
-student1.setMajorComplete(true);
-student1.setLascComplete(true);
-assertTrue(student1.readyToGraduate());
-}}
-=======
-        int credits = 45;
-        student1.setCurrentEarnedCr(credits);
-        assertEquals(credits, student1.getCurrentEarnedCr());
+	@Test
+	public void testReadyToGraduate1()
+	{
+		student1.setCurrentEarnedCr(120);
+		student1.setGpa(2.0);
+		student1.setMajorComplete(true);
+		student1.setLascComplete(true);
+		assertTrue(student1.readyToGraduate());
 	}
 	
 	@Test
@@ -61,4 +45,3 @@ assertTrue(student1.readyToGraduate());
 	}
 	
 }	
->>>>>>> 007255622f200d23d5ab600a27e40ff9d2337360
